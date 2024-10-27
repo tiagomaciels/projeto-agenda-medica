@@ -49,7 +49,13 @@ API construída utlizando Node.js, TypeScript e Serverless Framework com o plugi
 
    Verifique o arquivo serverless.yml para ajustar as configurações de acordo com suas necessidades.
 
-5. **Executar o projeto localmente com o plugin serveless-offline**
+
+5. **Executar o Jest para testes unitários da lógica de negócio e validações**
+      ```bash
+      npx jest
+      ```
+
+6. **Executar o projeto localmente com o plugin serveless-offline**
       ```bash
       npx serverless offline
       ```
@@ -68,13 +74,18 @@ Aplica a formatação de código com o Prettier:
 
     npm run format
 
-Faz o deploy da aplicação para a AWS Lambda:
+Executa testes unitários da lógica de negócio e validações
 
-    npx serverless deploy
+    npx jest
 
 Executa o projeto localmente para testes:
 
     npx serverless offline
+
+Faz o deploy da aplicação para a AWS Lambda:
+
+    npx serverless deploy
+
 
 ### Endpoints
 
