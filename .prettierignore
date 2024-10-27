@@ -1,0 +1,7 @@
+# Ignorar todas as pastas e arquivos fora de src
+# !src: Inclui a pasta src como um todo.
+!src
+#src/*: Ignora todos os arquivos e subpastas diretamente dentro de src.
+src/*
+#!src/**: Inclui todos os arquivos e subpastas recursivamente dentro de src.
+!src/**

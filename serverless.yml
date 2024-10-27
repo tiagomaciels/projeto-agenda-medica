@@ -1,0 +1,45 @@
+service: agenda-medica-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: sa-east-1
+  stage: dev
+  lambdaHashingVersion: 20201221
+  # accessKeyId: YOUR_ACCESS_KEY
+  # secretAccessKey: YOUR_SECRET_KEY
+
+  # Permissões necessárias para a Lambda (exemplo: escrever no CloudWatch logs)
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - logs:CreateLogGroup
+        - logs:CreateLogStream
+        - logs:PutLogEvents
+      Resource: arn:aws:logs:*:*:*
+
+functions:
+  # Função para buscar as agendas
+  buscarAgendas:
+    handler: src/handler.buscarAgendas
+    events:
+      - http:
+          path: agendas
+          method: get
+          cors: true # Permitir requisições de diferentes origens
+
+  # Função para marcar um agendamento
+  marcarAgendamento:
+    handler: src/handler.marcarAgendamento
+    events:
+      - http:
+          path: agendamento
+          method: post
+          cors: true
+
+plugins:
+  - serverless-offline # Para rodar localmente
+
+# Configuração de variáveis de ambiente (opcional)
+custom:
+  stage: ${opt:stage, self:provider.stage}
