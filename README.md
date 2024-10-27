@@ -49,6 +49,11 @@ API construída utlizando Node.js, TypeScript e Serverless Framework com o plugi
 
    Verifique o arquivo serverless.yml para ajustar as configurações de acordo com suas necessidades.
 
+5. **Executar o projeto localmente com o plugin serveless-offline**
+      ```bash
+      npx serverless offline
+      ```
+
 ### Comandos Disponíveis
 
 Verifica problemas de código com o ESLint:
