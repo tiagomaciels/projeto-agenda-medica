@@ -51,9 +51,12 @@ API construída utlizando Node.js, TypeScript e Serverless Framework com o plugi
 
 
 5. **Executar o Jest para testes unitários da lógica de negócio e validações**
-      ```bash
-      npx jest
-      ```
+
+       npx jest
+   ou
+      
+       npm run test
+      
 
 6. **Executar o projeto localmente com o plugin serveless-offline**
       ```bash
@@ -77,6 +80,10 @@ Aplica a formatação de código com o Prettier:
 Executa testes unitários da lógica de negócio e validações
 
     npx jest
+    
+ou
+    
+    npm run test
 
 Executa o projeto localmente para testes:
 
