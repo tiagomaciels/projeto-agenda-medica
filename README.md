@@ -1,4 +1,4 @@
-# Projeto Agenda Médica - API com AWS Lambda e Serverless Framework
+# [2024] Projeto Agenda Médica - API com AWS Lambda e Serverless Framework
 
 ## Este projeto é uma API para buscar agendas e horários de médicos e marcar agendamento do paciente.
 
@@ -168,11 +168,15 @@ Local:
     │   │   ├── interface/          # Definições de interfaces
     │   │   ├── mocks/              # Dados de exemplo para testes
     │   ├── handler.ts              # Ponto de entrada para funções Lambda
-    ├── .eslintrc.json              # Configuração do ESLint
-    ├── .prettierrc                 # Configuração do Prettier
+    ├── .gitignore                  # Pastas ignorados pelo Git
     ├── .prettierignore             # Arquivos e pastas ignorados pelo Prettier
+    ├── .prettierrc                 # Configuração do Prettier
+    ├── eslint.config.js            # Configuração do ESLint
+    ├── jest.config.ts              # Configuração do Jest      
     ├── package.json                # Dependências do projeto
-    └── serverless.yml              # Configurações do Serverless Framework
+    ├── README.md                   # Instruções do projeto.
+    ├── serverless.yml              # Configurações do Serverless Framework
+    └── tsconfig.json               # Configurações do Typescript
 
 ### Deploy na AWS
 
