@@ -44,24 +44,16 @@ API construída utlizando Node.js, TypeScript e Serverless Framework com o plugi
 4.  **Executar o Jest para testes unitários da lógica de negócio e validações**
 
         npx jest
-
     ou
 
         npm run test
 
 5.  **Executar o projeto localmente com o plugin serveless-offline**
 
-    ```bash
-    npx serverless offline
-    ```
-
-6.  **Configurar Credenciais AWS**
-
-    Configure suas credenciais AWS para permitir o deploy
-
-    ```bash
-    aws configure
-    ```
+        npx serverless offline
+     ou
+    
+        npm run start
 
 ### Comandos Disponíveis
 
@@ -88,7 +80,10 @@ ou
 Executa o projeto localmente para testes:
 
     npx serverless offline
-
+ou    
+  
+    npm run start
+    
 Faz o deploy da aplicação para a AWS Lambda:
 
     npx serverless deploy
@@ -186,9 +181,14 @@ Local:
 
 ### Deploy na AWS
 
+**Configurar Credenciais AWS**
+    Configure suas credenciais AWS para permitir o deploy
+
+    aws configure
+    
 Para fazer o deploy da aplicação para a AWS Lambda:
 
-        npx serverless deploy
+    npx serverless deploy
 
 Após o deploy, você receberá as URLs de endpoint fornecidas pela AWS.
 
