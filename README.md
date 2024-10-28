@@ -182,7 +182,8 @@ Local:
 ### Deploy na AWS
 
 **Configurar Credenciais AWS**
-    Configure suas credenciais AWS para permitir o deploy
+
+Configure suas credenciais AWS para permitir o deploy
 
     aws configure
     
