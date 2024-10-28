@@ -1,12 +1,15 @@
-import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
+import {
+  APIGatewayProxyEvent,
+  APIGatewayProxyHandler,
+  APIGatewayProxyResult,
+} from 'aws-lambda';
 import { AgendamentoService } from '../service/AgendamentoService';
 import { AgendamentoDTO } from '../dto/AgendamentoDTO';
 import { IAgendamento } from '../interface/IAgendamento';
 
 const agendamentoService = new AgendamentoService();
 
-// export const marcarAgendamento: APIGatewayProxyHandler = async (event) => {
-export const marcarAgendamento = async (
+export const marcarAgendamento: APIGatewayProxyHandler = async (
   event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
