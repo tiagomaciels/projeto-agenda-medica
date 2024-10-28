@@ -9,7 +9,7 @@ import { IAgendamento } from '../interface/IAgendamento';
 
 const agendamentoService = new AgendamentoService();
 
-export const marcarAgendamento: APIGatewayProxyHandler = async (
+export const marcarAgendamento = async (
   event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
