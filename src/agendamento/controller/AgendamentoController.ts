@@ -1,8 +1,4 @@
-import {
-  APIGatewayProxyEvent,
-  APIGatewayProxyHandler,
-  APIGatewayProxyResult,
-} from 'aws-lambda';
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 import { AgendamentoService } from '../service/AgendamentoService';
 import { AgendamentoDTO } from '../dto/AgendamentoDTO';
 import { IAgendamento } from '../interface/IAgendamento';
