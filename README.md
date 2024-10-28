@@ -21,6 +21,7 @@ API construída utlizando Node.js, TypeScript e Serverless Framework com o plugi
 - **Node.js** com **TypeScript** para construção da API
 - **Jest** para testes unitários da lógica de negócio e validações
 - **Serverless Framework** para gerenciar a infraestrutura
+- **Plugin serveless-offline** para executar o projeto localmente
 - **AWS Lambda** e **API Gateway** para deploy Serverless
 - **ESLint** e **Prettier** para qualidade e formatação do código
 
