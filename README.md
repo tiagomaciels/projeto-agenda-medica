@@ -26,42 +26,42 @@ API construída utlizando Node.js, TypeScript e Serverless Framework com o plugi
 
 ### Configuração do Projeto
 
-1. **Clonar o Repositório**
-   ```bash
-   git clone https://github.com/tiagomaciels/projeto-agenda-medica.git
-   cd projeto-agenda-medica
-   ```
-2. **Instalar Dependências**
+1.  **Clonar o Repositório**
+    ```bash
+    git clone https://github.com/tiagomaciels/projeto-agenda-medica.git
+    cd projeto-agenda-medica
+    ```
+2.  **Instalar Dependências**
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-3. **Configurar Credenciais AWS**
+3.  **Configuração do Serverless**
 
-   Configure suas credenciais AWS para permitir o deploy
+    Verifique o arquivo serverless.yml para ajustar as configurações de acordo com suas necessidades.
 
-   ```bash
-   aws configure
-   ```
+4.  **Executar o Jest para testes unitários da lógica de negócio e validações**
 
-4. **Configuração do Serverless**
+        npx jest
 
-   Verifique o arquivo serverless.yml para ajustar as configurações de acordo com suas necessidades.
+    ou
 
+        npm run test
 
-5. **Executar o Jest para testes unitários da lógica de negócio e validações**
+5.  **Executar o projeto localmente com o plugin serveless-offline**
 
-       npx jest
-   ou
-      
-       npm run test
-      
+    ```bash
+    npx serverless offline
+    ```
 
-6. **Executar o projeto localmente com o plugin serveless-offline**
-      ```bash
-      npx serverless offline
-      ```
+6.  **Configurar Credenciais AWS**
+
+    Configure suas credenciais AWS para permitir o deploy
+
+    ```bash
+    aws configure
+    ```
 
 ### Comandos Disponíveis
 
@@ -80,9 +80,9 @@ Aplica a formatação de código com o Prettier:
 Executa testes unitários da lógica de negócio e validações
 
     npx jest
-    
+
 ou
-    
+
     npm run test
 
 Executa o projeto localmente para testes:
@@ -92,7 +92,6 @@ Executa o projeto localmente para testes:
 Faz o deploy da aplicação para a AWS Lambda:
 
     npx serverless deploy
-
 
 ### Endpoints
 
@@ -179,7 +178,7 @@ Local:
     ├── .prettierignore             # Arquivos e pastas ignorados pelo Prettier
     ├── .prettierrc                 # Configuração do Prettier
     ├── eslint.config.js            # Configuração do ESLint
-    ├── jest.config.ts              # Configuração do Jest      
+    ├── jest.config.ts              # Configuração do Jest
     ├── package.json                # Dependências do projeto
     ├── README.md                   # Instruções do projeto.
     ├── serverless.yml              # Configurações do Serverless Framework
