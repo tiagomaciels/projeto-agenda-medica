@@ -196,12 +196,3 @@ Após o deploy, você receberá as URLs de endpoint fornecidas pela AWS.
 
 ### Considerações
 
-- **Limitações e Escalabilidade:** Este projeto foi projetado como uma API serverless e pode ser escalado automaticamente pela AWS Lambda para atender ao aumento de requisições sem a necessidade de gerenciar servidores. A escolha do API Gateway também permite lidar com CORS, autenticação e roteamento com facilidade.
-
-- **Segurança:** Certifique-se de configurar as permissões de segurança da AWS corretamente. É altamente recomendável o uso do AWS IAM com políticas restritivas para garantir que as funções Lambda tenham acesso apenas aos recursos necessários. Em ambientes de produção, considere implementar mecanismos de autenticação e autorização.
-
-- **Manutenção e Testes:** Este projeto inclui o uso de TypeScript para melhorar a legibilidade e evitar erros durante o desenvolvimento. O Jest é utilizado para testes unitários, assegurando que a lógica de negócio se comporte conforme o esperado e facilitando a identificação de erros durante o desenvolvimento. Para manter a qualidade do código, utilize os comandos de linting e formatação (npm run lint e npm run format ou configure seu VSCode para formatar o código ao salvar) antes de cada commit, e execute regularmente os testes (npm run test). Adicionalmente, considere expandir os testes unitários para cobrir integrações com o API Gateway e simulações de resposta da AWS.
-
-- **Despesas e Custos:** A execução de funções Lambda e o uso do API Gateway podem gerar custos, especialmente se a API for utilizada em grande escala. Monitore o uso através do console da AWS e configure alertas para evitar cobranças inesperadas. A AWS oferece uma camada gratuita que pode cobrir os custos iniciais de desenvolvimento e testes.
-
-- **Deploy e Ambiente de Desenvolvimento:** O Serverless Framework facilita o deploy e a administração de recursos na AWS, mas é fundamental configurar as credenciais AWS corretamente. Em ambientes de desenvolvimento, o uso do plugin **serverless-offline** permite a simulação local do API Gateway e Lambda, ajudando a desenvolver e testar o projeto sem custos adicionais.
