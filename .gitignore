@@ -1,5 +1,6 @@
 node_modules
 .serverless
 coverage
+dist
 undefined
 temp

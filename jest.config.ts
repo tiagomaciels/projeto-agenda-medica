@@ -10,7 +10,7 @@ const config: Config = {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
-  modulePathIgnorePatterns: ["<rootDir>/.serverless/"], // Ignora a pasta .serverless
+  modulePathIgnorePatterns: ["<rootDir>/.serverless/", "<rootDir>/dist/"], // Ignora a pasta .serverless e dist
 };
 
 export default config;
